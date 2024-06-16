@@ -1,0 +1,233 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="tic_tac_toe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=LXGW+WenKai+Mono+TC&family=Tiny5&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Micro+5+Charted&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playwrite+ID:wght@100..400&display=swap" rel="stylesheet">
+<body>
+    <img src="https://i.pinimg.com/564x/9f/20/82/9f20820d8f2a4420c111206a5b193ea6.jpg" draggable="false" class="background_tic_tac_toe" alt="tic_tac_toe">
+    <section>
+        <div class="flexbox"></div>
+            <div class="circle"></div>
+            <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 616 681" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="icon">
+                        <g id="background">
+                        <rect id="Rectangle 5" y="298" width="616" height="383" fill="black"/>
+                        <rect id="Rectangle 6" width="616" height="572" rx="286" fill="black"/>
+                        </g>
+                        <g id="cross-1">
+                        <rect id="Rectangle 1" x="0.70247" width="167.444" height="167.445" transform="matrix(0.70247 -0.711713 0.70247 0.711713 77.3259 252.506)" fill="black" stroke="black"/>
+                        <g id="Rectangle 2">
+                        <rect width="17.5698" height="170.523" transform="matrix(0.70247 -0.711713 0.70247 0.711713 128.629 196.653)" fill="url(#paint0_linear_78_47)"/>
+                        <rect width="17.5698" height="170.523" transform="matrix(0.70247 -0.711713 0.70247 0.711713 128.629 196.653)" fill="url(#paint1_linear_78_47)" fill-opacity="0.5"/>
+                        <rect width="17.5698" height="170.523" transform="matrix(0.70247 -0.711713 0.70247 0.711713 128.629 196.653)" stroke="black"/>
+                        </g>
+                        <g id="Rectangle 3">
+                        <path d="M127.41 304.849L187.031 244.444L246.652 184.038L258.995 196.542L139.752 317.354L127.41 304.849Z" fill="url(#paint2_linear_78_47)"/>
+                        <path d="M127.41 304.849L187.031 244.444L246.652 184.038L258.995 196.542L139.752 317.354L127.41 304.849Z" fill="url(#paint3_linear_78_47)" fill-opacity="0.5"/>
+                        <path d="M127.41 304.849L187.031 244.444L246.652 184.038L258.995 196.542L139.752 317.354L127.41 304.849Z" stroke="black"/>
+                        </g>
+                        <path id="Polygon 1" d="M143.818 184.079L195.247 132.707L246.675 184.079H143.818Z" fill="url(#paint4_linear_78_47)" stroke="black"/>
+                        <path id="Polygon 4" d="M128.669 305.005L74.7156 252.316L128.669 199.627V305.005Z" fill="url(#paint5_linear_78_47)" stroke="black"/>
+                        <path id="Polygon 5" d="M250.44 317.079L195.247 371.299L140.054 317.079H250.44Z" fill="url(#paint6_linear_78_47)" stroke="black"/>
+                        <path id="Polygon 6" d="M259.799 196.404L313.308 252.316L259.799 308.228V196.404Z" fill="url(#paint7_linear_78_47)" stroke="black"/>
+                        </g>
+                        <g id="cross-2">
+                        <rect id="Rectangle 1_2" x="0.70247" width="167.444" height="167.445" transform="matrix(0.70247 -0.711713 0.70247 0.711713 311.326 472.506)" fill="black" stroke="black"/>
+                        <g id="Rectangle 2_2">
+                        <rect width="17.5698" height="170.523" transform="matrix(0.70247 -0.711713 0.70247 0.711713 362.629 416.653)" fill="url(#paint8_linear_78_47)"/>
+                        <rect width="17.5698" height="170.523" transform="matrix(0.70247 -0.711713 0.70247 0.711713 362.629 416.653)" fill="url(#paint9_linear_78_47)" fill-opacity="0.5"/>
+                        <rect width="17.5698" height="170.523" transform="matrix(0.70247 -0.711713 0.70247 0.711713 362.629 416.653)" stroke="black"/>
+                        </g>
+                        <g id="Rectangle 3_2">
+                        <path d="M361.41 524.849L421.031 464.444L480.652 404.038L492.995 416.542L373.752 537.354L361.41 524.849Z" fill="url(#paint10_linear_78_47)"/>
+                        <path d="M361.41 524.849L421.031 464.444L480.652 404.038L492.995 416.542L373.752 537.354L361.41 524.849Z" fill="url(#paint11_linear_78_47)" fill-opacity="0.5"/>
+                        <path d="M361.41 524.849L421.031 464.444L480.652 404.038L492.995 416.542L373.752 537.354L361.41 524.849Z" stroke="black"/>
+                        </g>
+                        <path id="Polygon 1_2" d="M377.818 404.079L429.247 352.707L480.675 404.079H377.818Z" fill="url(#paint12_linear_78_47)" stroke="black"/>
+                        <path id="Polygon 4_2" d="M362.669 525.005L308.716 472.316L362.669 419.627V525.005Z" fill="url(#paint13_linear_78_47)" stroke="black"/>
+                        <path id="Polygon 5_2" d="M484.44 537.079L429.247 591.299L374.054 537.079H484.44Z" fill="url(#paint14_linear_78_47)" stroke="black"/>
+                        <path id="Polygon 6_2" d="M493.799 416.404L547.308 472.316L493.799 528.228V416.404Z" fill="url(#paint15_linear_78_47)" stroke="black"/>
+                        </g>
+                        <g id="o-1">
+                        <circle id="Ellipse 1" cx="436" cy="251" r="90" fill="url(#paint16_radial_78_47)"/>
+                        <ellipse id="Ellipse 2" cx="436.452" cy="250.548" rx="62.4121" ry="62.4121" fill="url(#paint17_radial_78_47)"/>
+                        </g>
+                        <g id="o-2">
+                        <circle id="Ellipse 1_2" cx="194" cy="482" r="90" fill="url(#paint18_radial_78_47)"/>
+                        <circle id="Ellipse 2_2" cx="194.452" cy="481.548" r="62.4121" fill="url(#paint19_radial_78_47)"/>
+                        </g>
+                        </g>
+                        <defs>
+                        <linearGradient id="paint0_linear_78_47" x1="8.43552" y1="4.04568" x2="-4.74064" y2="159.981" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.79" stop-color="white"/>
+                        <stop offset="1" stop-color="#737373"/>
+                        </linearGradient>
+                        <linearGradient id="paint1_linear_78_47" x1="6.77056" y1="132.057" x2="18.0702" y2="24.5775" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.84" stop-color="#F7F7F7"/>
+                        <stop offset="1" stop-color="#737373"/>
+                        </linearGradient>
+                        <linearGradient id="paint2_linear_78_47" x1="252.824" y1="190.29" x2="132.022" y2="309.523" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.79" stop-color="white"/>
+                        <stop offset="1" stop-color="#999999"/>
+                        </linearGradient>
+                        <linearGradient id="paint3_linear_78_47" x1="139.208" y1="309.553" x2="248.387" y2="201.987" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.824728" stop-color="white"/>
+                        <stop offset="1" stop-color="#4F4A4A"/>
+                        </linearGradient>
+                        <linearGradient id="paint4_linear_78_47" x1="195.247" y1="132" x2="195.352" y2="188.255" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.19" stop-color="white"/>
+                        <stop offset="0.35" stop-color="#C5C5C5"/>
+                        <stop offset="0.58" stop-color="#685E5E"/>
+                        <stop offset="0.88"/>
+                        </linearGradient>
+                        <linearGradient id="paint5_linear_78_47" x1="74" y1="252.42" x2="127.434" y2="252.42" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.185" stop-color="white"/>
+                        <stop offset="0.35" stop-color="#C5C5C5"/>
+                        <stop offset="0.581" stop-color="#685E5E"/>
+                        <stop offset="0.875"/>
+                        </linearGradient>
+                        <linearGradient id="paint6_linear_78_47" x1="193.375" y1="371.892" x2="195.243" y2="316.581" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.19" stop-color="white"/>
+                        <stop offset="0.35" stop-color="#C5C5C5"/>
+                        <stop offset="0.58" stop-color="#685E5E"/>
+                        <stop offset="0.88"/>
+                        </linearGradient>
+                        <linearGradient id="paint7_linear_78_47" x1="314" y1="252.328" x2="257.849" y2="252.425" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.19" stop-color="white"/>
+                        <stop offset="0.35" stop-color="#C5C5C5"/>
+                        <stop offset="0.59" stop-color="#685E5E"/>
+                        <stop offset="0.88"/>
+                        </linearGradient>
+                        <linearGradient id="paint8_linear_78_47" x1="8.43552" y1="4.04567" x2="-4.74064" y2="159.981" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.79" stop-color="white"/>
+                        <stop offset="1" stop-color="#737373"/>
+                        </linearGradient>
+                        <linearGradient id="paint9_linear_78_47" x1="6.77056" y1="132.057" x2="18.0702" y2="24.5775" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.84" stop-color="#F7F7F7"/>
+                        <stop offset="1" stop-color="#737373"/>
+                        </linearGradient>
+                        <linearGradient id="paint10_linear_78_47" x1="486.824" y1="410.29" x2="366.022" y2="529.523" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.79" stop-color="white"/>
+                        <stop offset="1" stop-color="#999999"/>
+                        </linearGradient>
+                        <linearGradient id="paint11_linear_78_47" x1="373.208" y1="529.553" x2="482.387" y2="421.987" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.824728" stop-color="white"/>
+                        <stop offset="1" stop-color="#4F4A4A"/>
+                        </linearGradient>
+                        <linearGradient id="paint12_linear_78_47" x1="429.247" y1="352" x2="429.352" y2="408.255" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.19" stop-color="white"/>
+                        <stop offset="0.35" stop-color="#C5C5C5"/>
+                        <stop offset="0.58" stop-color="#685E5E"/>
+                        <stop offset="0.88"/>
+                        </linearGradient>
+                        <linearGradient id="paint13_linear_78_47" x1="308" y1="472.42" x2="361.434" y2="472.42" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.185" stop-color="white"/>
+                        <stop offset="0.35" stop-color="#C5C5C5"/>
+                        <stop offset="0.581" stop-color="#685E5E"/>
+                        <stop offset="0.875"/>
+                        </linearGradient>
+                        <linearGradient id="paint14_linear_78_47" x1="427.375" y1="591.892" x2="429.243" y2="536.581" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.19" stop-color="white"/>
+                        <stop offset="0.35" stop-color="#C5C5C5"/>
+                        <stop offset="0.58" stop-color="#685E5E"/>
+                        <stop offset="0.88"/>
+                        </linearGradient>
+                        <linearGradient id="paint15_linear_78_47" x1="548" y1="472.328" x2="491.849" y2="472.425" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.19" stop-color="white"/>
+                        <stop offset="0.35" stop-color="#C5C5C5"/>
+                        <stop offset="0.59" stop-color="#685E5E"/>
+                        <stop offset="0.88"/>
+                        </linearGradient>
+                        <radialGradient id="paint16_radial_78_47" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(436 251) rotate(90) scale(90)">
+                        <stop offset="0.506" stop-color="white"/>
+                        <stop offset="1" stop-color="#999999"/>
+                        </radialGradient>
+                        <radialGradient id="paint17_radial_78_47" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(436.452 250.548) rotate(96.1829) scale(109.178 109.178)">
+                        <stop offset="0.478261" stop-color="white"/>
+                        <stop offset="1" stop-color="#999999"/>
+                        </radialGradient>
+                        <radialGradient id="paint18_radial_78_47" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(194 482) rotate(90) scale(90)">
+                        <stop offset="0.506" stop-color="white"/>
+                        <stop offset="1" stop-color="#999999"/>
+                        </radialGradient>
+                        <radialGradient id="paint19_radial_78_47" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(194.452 481.548) rotate(96.1829) scale(109.178)">
+                        <stop offset="0.478261" stop-color="white"/>
+                        <stop offset="1" stop-color="#999999"/>
+                        </radialGradient>
+                        </defs>
+                </svg>
+            </div>
+            <h1 class="title" style="font-family: Zen Dots, sans-serif; font-weight: 800; font-style: normal;">tic-tac-toe</h1>
+            <h4 class="subtitle" style="font-family: Tiny5, sans-serif; font-weight: 400; font-style: normal;">Play with your mates</h4>
+        </div>
+    </section>
+    <main>
+        <h1 id="tic_tac_toe">TIC-TAC-TOE</h1>
+        <div class="game_and_scoreboard">
+            <div class="box">
+                <div cellIndex="0" class="cell"></div>   
+                <div cellIndex="1" class="cell"></div>
+                <div cellIndex="2" class="cell"></div>
+                <div cellIndex="3" class="cell"></div>
+                <div cellIndex="4" class="cell"></div>
+                <div cellIndex="5" class="cell"></div>
+                <div cellIndex="6" class="cell"></div>
+                <div cellIndex="7" class="cell"></div>
+                <div cellIndex="8" class="cell"></div>
+                <p class="Status"></p>
+                <button class="reset" style="font-family: Tiny5, sans-serif; font-weight:500; font-style: normal; font-size: larger;" src="tic_tac_toe.html">Reset</button>        
+            </div>
+            <div class="leaderboard">
+                <svg xmlns="http://www.w3.org/2000/svg" height="100" width="60.5" viewBox="0 0 576 512" class="cup">
+                    <path fill="#FFD43B" d="M400 0H176c-26.5 0-48.1 21.8-47.1 48.2c.2 5.3 .4 10.6 .7 15.8H24C10.7 64 0 74.7 0 88c0 92.6 33.5 157 78.5 200.7c44.3 43.1 98.3 64.8 138.1 75.8c23.4 6.5 39.4 26 39.4 45.6c0 20.9-17 37.9-37.9 37.9H192c-17.7 0-32 14.3-32 32s14.3 32 32 32H384c17.7 0 32-14.3 32-32s-14.3-32-32-32H357.9C337 448 320 431 320 410.1c0-19.6 15.9-39.2 39.4-45.6c39.9-11 93.9-32.7 138.2-75.8C542.5 245 576 180.6 576 88c0-13.3-10.7-24-24-24H446.4c.3-5.2 .5-10.4 .7-15.8C448.1 21.8 426.5 0 400 0zM48.9 112h84.4c9.1 90.1 29.2 150.3 51.9 190.6c-24.9-11-50.8-26.5-73.2-48.3c-32-31.1-58-76-63-142.3zM464.1 254.3c-22.4 21.8-48.3 37.3-73.2 48.3c22.7-40.3 42.8-100.5 51.9-190.6h84.4c-5.1 66.3-31.1 111.2-63 142.3z"/>
+                </svg>
+                <p id="leaderboard">LEADERBORD</p>
+                <table>
+                    <tr>
+                        <th>PLAYER LIST</th>
+                        <th>WINS</th>
+                        <th>LOSES</th>
+                    </tr>
+                    <tr>
+                        <td class="playerx"></td>
+                        <td class="wins_player_x"></td>
+                        <td class="loss_player_x"></td>
+                    </tr>
+                    <tr>
+                        <td class="playero"></td>
+                        <td class="wins_player_o"></td>
+                        <td class="loss_player_o"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="tic_tac_toe.js"></script>
+</body>
+</html>

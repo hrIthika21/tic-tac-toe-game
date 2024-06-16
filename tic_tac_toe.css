@@ -1,0 +1,231 @@
+body{
+    height:100vh;
+    width: 100%;
+}
+
+body img{
+    width: 100%;
+    height:800px;
+    justify-content: center;
+    padding: 0 0 0 0;
+    margin:0;
+}
+
+.flexbox{
+    position: relative;
+
+}
+
+.circle{
+    position: absolute;
+    top:33%;
+    width:100%;
+    height:325px;
+    background-color: yellow;
+    opacity: 0.7;
+}
+
+.title{
+    text-transform: uppercase;
+    position: absolute;
+    top:35%;
+    left:27%;
+    font-size: 75px;
+}
+
+.subtitle{
+    position: absolute;
+    top:50%;
+    left:38%;
+    font-size:35px;
+}
+
+.icon{
+    position: absolute;
+    top:40%;
+    left:20%;
+}
+
+main{
+    position: relative;
+    padding: 0px 0px 0px 0px;
+    margin-top:-3%;
+    background-color: rgb(201, 239, 243);
+    box-shadow: 10px 10px 10px rgb(182, 231, 236) inset;
+}
+
+#tic_tac_toe{
+    position: absolute;
+    top:-8%;
+    left:28%;
+    font-family: "Black Ops One", system-ui;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+    color: rgb(200, 179, 218);
+
+}
+
+.box{
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding:150px 0 100px 0px;
+    margin-right:20%;
+    margin-left: 10%;
+}
+
+.cell{
+    width:100px;
+    height:100px;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    font-size: 75px;
+    text-align: center;
+    justify-content: center;
+    cursor:pointer;
+    transition:  0.5s;
+    background-color: rgb(145, 114, 114);
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(0, 0, 0);
+    box-shadow: 10px 10px 20px ;
+}
+
+.cell:hover{
+    width:110px;
+    height:110px;
+    margin:none
+}
+
+.cell:nth-child(3n){
+    margin-right: -10%;
+    margin-bottom:13%;
+}
+
+
+.cell:nth-child(3n-1){
+    margin-right: 25%;
+    margin-bottom:13%;
+
+}
+
+.cell:nth-last-child(3n){
+    margin-bottom:13%;
+    margin-left: 17%;
+    margin-right: -10%;
+}
+
+
+
+/*.cell:nth-child(3n){
+    border-right:none;
+}
+
+
+.cell:nth-last-child(3n){
+    border-left:none;
+}
+
+.cell:nth-child(1),.cell:nth-child(2),.cell:nth-child(3){
+    border-top: 0cm;
+    border-bottom: 4px solid;
+}
+
+.cell:nth-child(7),:nth-child(8),:nth-child(9){
+    border-bottom: 0cm;
+    border-top: 4px solid;
+}
+
+.cell:nth-child(4),:nth-child(5),:nth-child(6){
+    border-top:none;
+    border-bottom:none;
+}*/
+
+.reset{
+    padding:10px 5px 10px 5px;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    position: absolute;
+    top:92%;
+    left:20%;
+}
+
+.reset:hover{
+    border: 4px solid rgb(0, 0, 0);
+}
+
+.Status{
+    color: rgb(180, 148, 210);
+    font-family: "LXGW WenKai Mono TC", monospace;
+    font-weight: 400;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-style: normal;
+    position: relative;
+    top:60%;
+    left:90%;
+}
+
+.game_and_scoreboard{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.cup{
+    position: absolute;
+    margin-top: 9%;
+    margin-left:2%;
+    animation: bounce 1s infinite ease;
+}
+
+@keyframes bounce{
+    0%{ transform: translateY(0px);}
+    20%{transform: translate(0px);}
+    30%{transform: translateY(-25px);}
+    40%{transform: translateX(0px);}
+    50%{transform: translateY(-10px);} 
+    70%{transform: translateY(0px);}
+    100%{transform: translateY(0px);}
+
+}
+
+#leaderboard{
+    position: absolute;
+    margin-top: 11%;
+    margin-left:7%;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    font-style: normal;
+    margin-left: 10%;
+}
+
+table{
+    position: absolute;
+    margin-top: 18%;
+    width:450px;
+    height: 250px;
+    align-items: center;
+}
+
+th,td{
+    border: 5px solid rgb(191, 159, 159);
+    padding: 5px 5px 5px 5px;
+    width:250px;
+    text-align: center;
+    font-family: "Playwrite ID", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 11px;
+    font-style: bold;
+    text-transform: uppercase;
+}
+
+@media (max-width:fullscreen){
+    body{
+        font-size: 15px;
+    }
+}
